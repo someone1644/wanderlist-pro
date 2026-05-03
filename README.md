@@ -1,16 +1,26 @@
-# React + Vite
+# WanderList Pro
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+WanderList Pro is an interactive, frontend focused travel itinerary planner built with React. It allows users to search for global destinations, visualize them on an interactive map, and manage their travel bucket lists through a dynamic column-based UI.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* **Interactive Map Integration:** Utilizes `react-leaflet` and OpenStreetMap APIs to dynamically fly to and plot user-searched destinations.
+* **Geocoding Search:** Integrated with the Nominatim OpenStreetMap API to convert text-based city searches into precise latitude and longitude coordinates.
+* **State Management & Persistence:** Leverages React Hooks (`useState`, `useEffect`) and browser `localStorage` to ensure user itineraries are saved locally without needing a backend database.
+* **Dynamic Itinerary Board:** A three-tier management system (Bucket List, Active Itinerary, Completed) allowing users to track their travel progress.
+* **Integrated Utility Widget:** Includes a custom-built budget calculator component directly in the dashboard.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Frontend:** React (Vite)
+* **Map Rendering:** Leaflet, React-Leaflet
+* **APIs:** OpenStreetMap (Nominatim Geocoding API)
+* **Styling:** Custom CSS (Responsive, Modern UI)
 
-## Expanding the ESLint configuration
+## Running the Project Locally
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+To run this project on your local machine:
+
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/someone1644/wanderlist-pro.git](https://github.com/someone1644/wanderlist-pro.git)
